@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:title="@string/preferences_category_general"
+        app:icon="@drawable/ic_baseline_settings_24"
+        app:fragment="io.github.svejnohatomas.swansea.newsaggregator.ui.settings.fragments.GeneralSettingsFragment" />
+
+    <Preference
+        app:title="@string/preferences_category_language_and_region"
+        app:icon="@drawable/ic_baseline_language_24"
+        app:fragment="io.github.svejnohatomas.swansea.newsaggregator.ui.settings.fragments.LanguageAndRegionSettingsFragment" />
+
+    <Preference
+        app:title="@string/preferences_category_topics"
+        app:icon="@drawable/ic_baseline_topic_24"
+        app:fragment="io.github.svejnohatomas.swansea.newsaggregator.ui.settings.fragments.TopicsSettingsFragment"/>
+
+    <Preference
+        app:title="@string/preferences_category_notifications"
+        app:icon="@drawable/ic_baseline_notifications_24"
+        app:fragment="io.github.svejnohatomas.swansea.newsaggregator.ui.settings.fragments.NotificationsSettingsFragment"/>
+
+</PreferenceScreen>

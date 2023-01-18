@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:contentDescription="@string/search_query"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="@string/search_query">
+    </androidx.appcompat.widget.SearchView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_search_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/search_in"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/search_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_input" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/search_in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:checked="true"
+        android:text="@string/title"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_search_in" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/search_in_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:checked="true"
+        android:text="@string/description"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_in_title" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/search_in_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:checked="true"
+        android:text="@string/content"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_in_description" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/material_divider_search_in_and_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_in_content" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_date_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/date_range"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/date_range"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_divider_search_in_and_dates" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_from_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/from_date"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/from_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date_range" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_from_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/from_time"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/from_time"
+        app:layout_constraintBottom_toBottomOf="@+id/search_from_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_from_date" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_to_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/to_date"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/to_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_from_date" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_to_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/to_time"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/to_time"
+        app:layout_constraintBottom_toBottomOf="@+id/search_to_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_to_date" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/material_divider_dates_and_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_to_date" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/language"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="?colorOnSurface"
+        android:contentDescription="@string/language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_divider_dates_and_language" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:contentDescription="@string/select_language"
+        app:layout_constraintTop_toBottomOf="@+id/textView_language"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/search_language_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?colorOnSurface"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_padding"
+        android:text="@string/search"
+        android:contentDescription="@string/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_language"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

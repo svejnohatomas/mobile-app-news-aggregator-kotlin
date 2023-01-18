@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/refresh"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            app:key="preferences_general_refresh_enabled"
+            app:title="@string/auto_refresh"
+            app:icon="@drawable/ic_baseline_refresh_24"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:key="preferences_general_refresh_interval"
+            app:dependency="preferences_general_refresh_enabled"
+            app:title="@string/refresh_interval"
+            app:icon="@drawable/ic_baseline_timer_24"
+            app:entries="@array/preferences_general_refresh_interval_list_entries"
+            app:entryValues="@array/preferences_general_refresh_interval_list_values"
+            app:defaultValue="60"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

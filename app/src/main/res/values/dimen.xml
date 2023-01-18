@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
+
+    <!-- activity_article.xml -->
+    <dimen name="article_detail_title_text_size">15sp</dimen>
+    <dimen name="article_detail_image_height">250dp</dimen>
+
+    <!-- recycler_view_article_item.xml -->
+    <dimen name="article_item_image_height">200dp</dimen>
+    <dimen name="article_item_title_text_size">15sp</dimen>
+
+    <!-- recycler_view_my_news_group.xml -->
+    <dimen name="category_name">18sp</dimen>
+
+    <!-- list_item.xml -->
+    <dimen name="list_item_padding">16dp</dimen>
+
+    <!-- activity_search.xml -->
+    <dimen name="default_text_size">16sp</dimen>
+</resources>

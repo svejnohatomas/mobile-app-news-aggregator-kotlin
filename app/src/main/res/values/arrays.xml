@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preferences_general_refresh_interval_list_entries">
+        <item>@string/minutes_30</item>
+        <item>@string/hours_1</item>
+        <item>@string/hours_2</item>
+        <item>@string/hours_3</item>
+        <item>@string/hours_6</item>
+        <item>@string/hours_12</item>
+        <item>@string/hours_24</item>
+    </string-array>
+    <string-array name="preferences_general_refresh_interval_list_values">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+    </string-array>
+
+    <string-array name="preferences_category_language_and_region_language_list_entries">
+        <item>@string/english_uk</item>
+    </string-array>
+    <string-array name="preferences_category_language_and_region_language_list_values">
+        <item>english_uk</item>
+    </string-array>
+
+    <string-array name="preferences_category_language_and_region_countries_list_entries">
+        <item>@string/united_arab_emirates</item>
+        <item>@string/argentina</item>
+        <item>@string/austria</item>
+        <item>@string/australia</item>
+        <item>@string/belgium</item>
+        <item>@string/bulgaria</item>
+        <item>@string/brazil</item>
+        <item>@string/canada</item>
+        <item>@string/switzerland</item>
+        <item>@string/china</item>
+        <item>@string/colombia</item>
+        <item>@string/cuba</item>
+        <item>@string/czechia</item>
+        <item>@string/germany</item>
+        <item>@string/egypt</item>
+        <item>@string/france</item>
+        <item>@string/united_kingdom</item>
+        <item>@string/greece</item>
+        <item>@string/hong_kong</item>
+        <item>@string/hungary</item>
+        <item>@string/indonesia</item>
+        <item>@string/ireland</item>
+        <item>@string/israel</item>
+        <item>@string/india</item>
+        <item>@string/italy</item>
+        <item>@string/japan</item>
+        <item>@string/korea</item>
+        <item>@string/lithuania</item>
+        <item>@string/latvia</item>
+        <item>@string/morocco</item>
+        <item>@string/mexico</item>
+        <item>@string/malaysia</item>
+        <item>@string/nigeria</item>
+        <item>@string/netherlands</item>
+        <item>@string/norway</item>
+        <item>@string/new_zealand</item>
+        <item>@string/philippines</item>
+        <item>@string/poland</item>
+        <item>@string/portugal</item>
+        <item>@string/romania</item>
+        <item>@string/serbia</item>
+        <item>@string/russia</item>
+        <item>@string/saudi_arabia</item>
+        <item>@string/sweden</item>
+        <item>@string/singapore</item>
+        <item>@string/slovenia</item>
+        <item>@string/slovakia</item>
+        <item>@string/thailand</item>
+        <item>@string/turkey</item>
+        <item>@string/taiwan</item>
+
+        <item>@string/ukraine</item>
+        <item>@string/united_states</item>
+        <item>@string/venezuela</item>
+        <item>@string/south_africa</item>
+
+    </string-array>
+    <string-array name="preferences_category_language_and_region_countries_list_values">
+        <item>ae</item>
+        <item>ar</item>
+        <item>at</item>
+        <item>au</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>br</item>
+        <item>ca</item>
+        <item>ch</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>cu</item>
+        <item>cz</item>
+        <item>de</item>
+        <item>eg</item>
+        <item>fr</item>
+        <item>gb</item>
+        <item>gr</item>
+        <item>hk</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>ie</item>
+        <item>il</item>
+        <item>in</item>
+        <item>it</item>
+        <item>jp</item>
+        <item>kr</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>ma</item>
+        <item>mx</item>
+        <item>my</item>
+        <item>ng</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>nz</item>
+        <item>ph</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>rs</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>se</item>
+        <item>sg</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>tw</item>
+        <item>ua</item>
+        <item>us</item>
+        <item>ve</item>
+        <item>za</item>
+    </string-array>
+</resources>
